@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/robot"
+    tools:context=".CrearUsuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
+        android:alpha="0.3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="38dp">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREAR USUARIO"
+            android:textColor="@color/my_primary"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea tu Usuario"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/person"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/edad"
+            android:inputType="text|number" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celular"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postCellPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/cellphone"
+            android:inputType="text|number" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciudad de Residencia"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/location"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IA Favorita"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postFavoriteStation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ia2"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Como te ayuda la IA?"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/postfavoriteNature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ia22"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="CREAR"
+            app:cornerRadius="32dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewVolverPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Volver a la pagina principal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ObsoleteLayoutParam,TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
